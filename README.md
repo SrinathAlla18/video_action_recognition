@@ -1,4 +1,4 @@
-# video_action_recognition Using TSN
+# video_action_recognition Using TSN _rgb
 
 Download the video action recognition using MMAction2.ipynb file and just run it. reasons for implementing this method will be mentioned below.
 
