@@ -6,10 +6,11 @@ The advancements in computer vision especially in image classification domain ca
 
 To solve this problem we have two choices:
 1) using 3D CNN's to model the temporal dimension 
-2) 2) using optical flow component to trian the model.
+2) using optical flow component to trian the model.
 Using the 3D CNN is computationally expensive than the 2D CNN's. Using opticalflow component needs lot of memory to store the optical flow frames for large datset.
- The orginal TSN is based on two stream convnets one is rgb based, another is optical flow based.I have only used rgb based temporal segment method in this model. I didn't use the flow based convnet because the extraction process requires lot of computational power and the extracted frames needs storage.
-reason for implementing TSN method: 
+The orginal TSN is based on two stream convnets one is rgb based, another is optical flow based.I have only used rgb based temporal segment method in this model. I didn't use the flow based convnet because the extraction process requires lot of computational power and the extracted frames needs storage.
+
+Reason for implementing TSN method: 
 1)It uses the 2d CNN in its architecture.(makes the model light) 
 2) while training uses single frame from each segments.(reduces the time required for training)
 There are various method like TSM, TIN that works well with same or better advantages but I used TSN because of the resources related to TSN in MMaction2.
